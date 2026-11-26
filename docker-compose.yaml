@@ -1,0 +1,11 @@
+services:
+  web:
+    image:nginx:latest
+    container_name:mynginx
+    ports:
+        - "8081:80"
+  redis:
+    image:redis:latest
+    container_name:myredis
+    ports:
+        - "6379:6379"
